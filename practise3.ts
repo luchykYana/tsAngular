@@ -7,14 +7,9 @@
 // кладем в массив экземпляры классов(количество может быть любым но мин 2)
 // проходимся циклом по нему и и высчитываем площадь для каждой фигуры
 
-class Shape {
-    perimeter(): number {
-        return 0;
-    }
-
-    area(): number {
-        return 0;
-    }
+abstract class Shape {
+    abstract perimeter(): number;
+    abstract area(): number;
 }
 
 class Triangle extends Shape {
